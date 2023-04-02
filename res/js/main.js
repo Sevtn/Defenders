@@ -64,7 +64,7 @@ class Projectile {
     this.y = y;
     this.width = 10;
     this.height = 10;
-    this.power = 20;
+    this.dmg = 20;
     this.speed = 5;
   }
   update() {
@@ -86,7 +86,7 @@ function handleProjectiles() {
         projectiles[i] &&
         collision(projectiles[i], enemies[j])
       ) {
-        enemies[j].health -= projectiles[i].power;
+        enemies[j].health -= projectiles[i].dmg;
         projectiles.splice(i, 1); //specifickej projketil ktery provedl danou kolizi
         i--;
       }
