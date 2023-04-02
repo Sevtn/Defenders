@@ -22,7 +22,7 @@ const projectiles = [];
 const mouse = {
   x: 10,
   y: 10,
-  width: 0.1,
+  width: 0.1,//velikost potreba kvuli detekci kolize
   height: 0.1,
 };
 let canvasPosition = canvas.getBoundingClientRect();
@@ -35,7 +35,7 @@ canvas.addEventListener("mouseleave", function () {
   mouse.y = undefined;
 });
 
-//herni pole
+//herni pole//pozdeji mozna dalsi veze k liste
 const controlsBar = {
   width: canvas.width,
   height: cellSize,
