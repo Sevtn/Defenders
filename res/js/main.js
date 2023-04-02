@@ -195,7 +195,7 @@ function handleEnemies() {
       gameOver = true;
     }
     if (enemies[i].health <= 0) {
-      let gainedResources = (enemies[i].maxHealth / 10) * 2.5;
+      let gainedResources = (enemies[i].maxHealth / 10) * 2;
       numbersOfResources += gainedResources;
       enemies.splice(i, 1);
       i--;
@@ -205,7 +205,7 @@ function handleEnemies() {
     let verticalPosition = Math.floor(Math.random() * 5 + 1) * cellSize;
     enemies.push(new Enemy(verticalPosition));
     enemyPositions.push(verticalPosition);
-    if (enemiesInterval > 120) enemiesInterval -= 50;
+    if (enemiesInterval > 80) enemiesInterval -= 50;
   }
 }
 //UI
