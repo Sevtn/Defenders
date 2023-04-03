@@ -205,7 +205,7 @@ function handleEnemies() {
     let verticalPosition = Math.floor(Math.random() * 5 + 1) * cellSize;
     enemies.push(new Enemy(verticalPosition));
     enemyPositions.push(verticalPosition);
-    if (enemiesInterval > 80) enemiesInterval -= 50;
+    if (enemiesInterval > 25) enemiesInterval -= 50;
   }
 }
 //UI
