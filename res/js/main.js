@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-
+//radek 208 enemy spawns
 //canvas stats
 canvas.width = 900;
 canvas.height = 600;
